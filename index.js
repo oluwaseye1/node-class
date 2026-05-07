@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = process.env.port || 3000;
+const port = 3000;
 const students = [
 
     {
@@ -89,6 +89,6 @@ app.get('/api', (req,res) => {
     res.json(students);
 });
 
-app.listen(port, "0.0.0.0", () => {
+app.listen(port, () => {
     console.log(`server is running on port ${port}`);
 })
