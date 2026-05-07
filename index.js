@@ -75,9 +75,9 @@ const students = [
 ]
 
 
-// app.get('/', (req, res) => {
-//     // res.send('welcome to my express sever!');
-// })
+app.get('/', (req, res) => {
+    // res.send('welcome to my express sever!');
+})
 
 app.get('/about', (req, res) => {
     res.sendFile(__dirname + '/index.html');
