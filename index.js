@@ -76,7 +76,7 @@ const students = [
 
 
 app.get('/', (req, res) => {
-    res.send('welcome to my express sever!');
+    // res.send('welcome to my express sever!');
 })
 
 app.get('/about', (req, res) => {
@@ -90,5 +90,5 @@ app.get('/api', (req,res) => {
 });
 
 app.listen(port, () => {
-    // console.log(`server is running on port ${port}`);
+    console.log(`server is running on port ${port}`);
 })
